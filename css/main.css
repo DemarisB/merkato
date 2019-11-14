@@ -1,3 +1,8 @@
+
+/*----------------------
+Basic Setup
+----------------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -14,18 +19,76 @@ html{
 }
 
 header{
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
-    background-color: #bb1616;
-    height: auto;
+    height: 60vh;
     display: flex;
 }
 
-.main-nav{
+/*-------------------------
+Mobile Nav
+-------------------------*/
+.main-nav{ 
+    margin: 40px 5px;
     display: none;
+    list-style: none;
+    font-size: .95em;
+}
+
+
+.mobile-nav-icon a{
+    justify-self: right;
+    align-content: stretch;
+}
+
+.mobile-nav-icon i{
+    font-size: 300%;
+    color: #fff;
+}
+
+.js--main-nav li {
+    position: relative;
+}
+
+.js--main-nav li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.js--main-nav ul li{
+    list-style: none;
+}
+
+
+/*-------------------------
+Ion Icon Font Styles
+-------------------------*/
+i{
+    font-size: 5rem;
+    color: #fff;
+}
+
+ion-icon{
+    font-size: 4rem;
+    color: #fff;
+}
+
+/*-------------------------
+Headings
+-------------------------*/
+.hero-text-box{
+    position: absolute;
+    width: 90%;
+    margin: 0;
+    align-self: center;
 }
 
 h1{
+    align-items: center;
     color: #fff;
     font-size: 2.5rem;
     margin: 25px 15px;
@@ -49,11 +112,22 @@ h3{
 h4{
     font-size: 1.25rem;
 }
+
+/*-------------------------
+Paragraphs
+-------------------------*/
+
+
 p{
     font-size: 1.2rem;
     font-family: 'Oxygen', sans-serif;
     padding: 10px 5px;
 }
+
+/*-------------------------
+Main Section
+-------------------------*/
+
 
 ul li{
     list-style: none;
@@ -84,12 +158,13 @@ main{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
     margin: 15px 0;
     padding: 3px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 .panel-group{
@@ -97,14 +172,19 @@ main{
     padding: 2px 16px;
 }
 
-.panel .injera img{
+.panel img{
     width: 300px;
     height: auto;
 }
 
+
+/*-------------------------
+Contact
+-------------------------*/
+
 .contact{
     margin-top: 15px;
-    height: 65vh;
+    height: 70vh;
     background-color: #e7e4e4;
 }
 
@@ -125,6 +205,12 @@ main{
     justify-content: center;
 }
 
+
+/*-------------------------
+Footer
+-------------------------*/
+
+
 footer{
   height: 14vh;
   background-color: #bb1616;
@@ -137,13 +223,14 @@ footer li{
 
 footer p{
     margin: 0;
+    padding: 0;
     color: #fff;
     font-family: cursive;
     text-align: center;
     font-size: 1rem;
 }
 
-ion-icon{
-    font-size: 3.5rem;
-    color: #fff;
-}
+/*--------------------
+Media Queries
+---------------------*/
+
