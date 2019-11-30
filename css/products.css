@@ -1,0 +1,195 @@
+/*----------------------
+Basic Setup
+----------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    background-color: #fff;
+    color: #494949;
+    overflow-x: hidden;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+header{
+    background-color: #bb1616;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 45vh;
+    display: flex;
+}
+
+
+/*-------------------------
+Logo
+-------------------------*/
+
+.logo{
+    height: 75px;
+    border-radius: 50%;
+}
+
+
+
+/*-------------------------
+Mobile Nav
+-------------------------*/
+.main-nav{ 
+    margin: 40px 5px;
+    display: none;
+    font-size: .95em;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.main-nav ul{
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    width: auto;
+}
+
+.mobile-nav-icon i{
+    font-size: 300%;
+    color: #fff;
+}
+
+.js--main-nav li {
+    position: relative;
+}
+
+.js--main-nav li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+/*-------------------------
+Ion Icon Font Styles
+-------------------------*/
+i{
+    font-size: 5rem;
+    color: #fff;
+}
+
+ion-icon{
+    font-size: 4rem;
+    color: #fff;
+}
+
+/*-------------------------
+Headings
+-------------------------*/
+.hero-text-box{
+    position: absolute;
+    width: 90%;
+    margin: 0;
+    align-self: center;
+}
+
+h1{
+    align-items: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 25px 15px;
+    padding: 10px;
+}
+
+h2,
+h3,
+h4{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+h4{
+    font-size: 1.25rem;
+}
+
+/*-------------------------
+Paragraphs
+-------------------------*/
+
+
+p{
+    font-size: 1.2rem;
+    font-family: 'Oxygen', sans-serif;
+    margin: 8px;
+    padding: 10px 5px;
+}
+
+/*-------------------------
+Main Section
+-------------------------*/
+
+
+ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 2px; 
+}
+
+
+main{
+    padding: 1px;
+    margin: 10px 0 0 0;
+}
+
+
+.panel{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 15px 0;
+    padding: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.panel-group{
+    justify-items: center;
+    padding: 2px 8px;
+}
+
+/*-------------------------
+Footer
+-------------------------*/
+
+
+footer{
+    height: 17vh;
+    background-color: #bb1616;
+  }
+  
+  footer li{
+      list-style: none;
+      text-align: center;
+  }
+  
+  footer p{
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-family: cursive;
+      text-align: center;
+      font-size: 1rem;
+  }

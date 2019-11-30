@@ -19,7 +19,7 @@ html{
 }
 
 header{
-    background-image: url(../img/hero.jpg);
+    background-color: #bb1616;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,20 +28,33 @@ header{
     display: flex;
 }
 
+
+/*-------------------------
+Logo
+-------------------------*/
+
+.logo{
+    height: 75px;
+    border-radius: 50%;
+}
+
+
+
 /*-------------------------
 Mobile Nav
 -------------------------*/
 .main-nav{ 
     margin: 40px 5px;
     display: none;
-    list-style: none;
     font-size: .95em;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
 }
 
-
-.mobile-nav-icon a{
-    justify-self: right;
-    align-content: stretch;
+.main-nav ul{
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    width: auto;
 }
 
 .mobile-nav-icon i{
@@ -57,10 +70,6 @@ Mobile Nav
     color: #fff;
     text-decoration: none;
 
-}
-
-.js--main-nav ul li{
-    list-style: none;
 }
 
 
@@ -121,6 +130,7 @@ Paragraphs
 p{
     font-size: 1.2rem;
     font-family: 'Oxygen', sans-serif;
+    margin: 8px;
     padding: 10px 5px;
 }
 
@@ -132,7 +142,7 @@ Main Section
 ul li{
     list-style: none;
     font-size: 1.2rem;
-    padding: 5px; 
+    padding: 2px; 
 }
 
 
@@ -169,7 +179,7 @@ main{
 
 .panel-group{
     justify-items: center;
-    padding: 2px 16px;
+    padding: 2px 8px;
 }
 
 .panel img{
@@ -183,8 +193,12 @@ Contact
 -------------------------*/
 
 .contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
     margin-top: 15px;
-    height: 70vh;
+    height: 85vh;
     background-color: #e7e4e4;
 }
 
@@ -212,7 +226,7 @@ Footer
 
 
 footer{
-  height: 14vh;
+  height: 17vh;
   background-color: #bb1616;
 }
 
@@ -234,3 +248,129 @@ footer p{
 Media Queries
 ---------------------*/
 
+@media only screen and (min-width: 567px)
+    and (orientation: landscape){
+        .contact{
+            height: 160vh;
+            flex-wrap: nowrap;
+        }
+
+        .contact ul{
+            width: auto;
+        }
+
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 3;
+            width: auto;
+        }
+
+        .map-container{
+            width: 340px;
+            margin: 0;
+            flex-direction: row;
+            align-self: baseline;
+        }
+
+        footer{
+            height: 30vh;
+        }
+    }
+
+
+
+@media only screen and (min-width: 768px){
+    html,
+    body{
+        font-size: 18px;
+    }
+
+    .main-nav{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        list-style: none;
+    }
+
+    .mobile-nav-icon{display: none;} 
+
+    .panel-group{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;        
+    }
+
+    .panel{
+        flex-basis: 15%;
+        justify-items: center;
+    }
+
+    .contact{
+        height: 50vh;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .contact-info{
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px)
+and (orientation: landscape){
+    .contact{
+        height: 100vh;
+    }
+
+    .map-container{
+        margin: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+
+    html,
+    body{font-size: 20px;}
+
+    .contact{
+        height: 50vh;
+    }
+
+    .contact-info{
+        align-items: center;
+        margin: 15px;
+    }
+
+    .map-container{
+        align-self: center;
+    }
+
+    footer{
+        height: 18vh;
+    }
+}
+
+@media only screen and (min-width: 992px)
+    and (orientation:landscape){
+        .contact{
+            height: 95vh;
+        }
+
+        footer{ height: 17vh;}
+
+    }
+
+@media only screen and (min-width: 1200px){
+    .contact{
+        height: 90vh;
+    }
+
+
+    footer{
+        height: 18vh;
+    }
+}
